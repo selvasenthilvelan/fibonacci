@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.1
+// Version:		   0.2
 //
 // ------------------------------------------------------------------------------
 
@@ -45,6 +45,38 @@ unsigned long long fib_recursive( unsigned int n )
   printf("%d : %llu\n", n, value );
   #endif
 
+  return( value );
+}
+
+
+// Fibonacci Iterative Function
+unsigned long long fib_iterative( unsigned int n )
+{
+  unsigned long long value;
+  unsigned long long p2 = 0;
+  unsigned long long p1 = 1;
+  unsigned int count = 2;
+
+  if( n <= 1 )
+  {
+    value = n;
+  }
+  else
+  {
+    while( count <= n )
+    {
+      value = p2 + p1;
+      p2 = p1;
+      p1 = value;   
+
+      #if( DEBUG >= 1 )
+      printf("%d : %llu\n", count, value );
+      #endif
+
+      count++;
+    }
+  }
+  
   return( value );
 }
 

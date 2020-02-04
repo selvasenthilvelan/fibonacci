@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.1
+// Version:		   0.2
 //
 // ------------------------------------------------------------------------------
 
@@ -34,6 +34,10 @@ int main( int argc, char **argv )
  if(argc > 1) 
   {
    pos = atoi(argv[1]);
+   if((pos==0) && (argv[1][0]!='0'))
+    { 	   
+     pos = -1;
+    }     
   }	  
  else
   {
@@ -52,12 +56,13 @@ int main( int argc, char **argv )
   {
     n = (unsigned)pos;
   }
-  printf("got %d from cli \n", n);
 
   
  // Call the recursive fibonacci function and print the result
- printf("Recursive: %d fibonacci number is: %llu\n\n", n, fib_recursive( n ));
+ //printf("Recursive: %d fibonacci number is: %llu\n\n", n, fib_recursive( n ));
 
+ // Call the iterative fibonacci function and print the result
+ printf("Iterative: %d fibonacci number is: %llu\n\n", n, fib_iterative( n ));
 
 }	
 
