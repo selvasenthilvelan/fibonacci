@@ -1,0 +1,54 @@
+Coding Discussion - Fibonacci Number Sequence Generation
+========================================================
+
+Part I:
+-------
+
+The code implements a pure recursive function and also an iterative function to 
+compute the fibonacci series based on the input index between 0 to 100.
+
+The documentation file inludes a description of each implementation and also 
+sample output for different ways to invoke the fibonacci binary.
+
+
+
+Part II:
+--------
+
+Between the pure recursive implementation and the iterative implementation, I
+would use the iterative solution for actual release.
+
+The pure recursive implementation was not chosen for release for the following 
+reasons:
+
+* Extremely long compute times, since each fibonacci value is computed on the 
+  fly multiple times.
+
+* Recursion uses a lot more memory, since multiple frames are pushed to the 
+  stack during each computation. It could lead to stack overflow issue.
+
+
+I would choose this 'bad' version(pure recursion) for release, only if we have a
+system that has extremely large stack memory allocation which will ensure that a 
+stack overflow due to heavy recursion would not occur.
+
+
+   
+Part III:
+---------
+
+The recursive solution can be optimized for both single function call and over 
+the long term use, by storing the computed fibonacci numbers and reusing them.
+This eliminates all the unnecessary task of re-computing the values on the fly
+everytime it is needed.
+
+See description of the 3rd implementation (Recursive method with optimization) 
+in the README.md file. The optimized function implementation is available in 
+the fibonacci.c file.
+ 
+The cost of this optimized solution is more memory usage. The tradeoff is some 
+memory usage to save a lot in CPU computation time. 
+
+A storage implementation using an array is accectable in this case, since the 
+index input range is bounded from 0 to 100. For a genaralized use case, a hash 
+table implementation can potentially be beneficial to save memory.

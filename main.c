@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.4
+// Version:		   1.0
 //
 // ------------------------------------------------------------------------------
 
@@ -59,7 +59,7 @@ int main( int argc, char **argv )
 
   
  // Call the recursive fibonacci function and print the result
- //printf("Recursive: %d fibonacci number is: %f\n\n", n, fib_recursive_d( n ));
+ printf("Recursive: %d fibonacci number is: %f\n\n", n, fib_recursive_d( n ));
 
  // Call the iterative fibonacci function and print the result
  printf("Iterative: %d fibonacci number is: %f\n\n", n, fib_iterative_d( n ));
