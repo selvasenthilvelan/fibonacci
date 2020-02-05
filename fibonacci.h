@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.2
+// Version:		   0.3
 //
 // ------------------------------------------------------------------------------
 
@@ -19,7 +19,7 @@
  #define FIBONACCI_H__
 
  // Fibonacci function definitions
- unsigned long long fib_recursive( unsigned int n ); // Fibonacci recursive function
- unsigned long long fib_iterative( unsigned int n ); // Fibonacci iterative function
+ double fib_recursive_d( unsigned int n ); // Fibonacci recursive function
+ double fib_iterative_d( unsigned int n ); // Fibonacci iterative function
 
 #endif
