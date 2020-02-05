@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.3
+// Version:		   0.4
 //
 // ------------------------------------------------------------------------------
 
@@ -21,5 +21,8 @@
  // Fibonacci function definitions
  double fib_recursive_d( unsigned int n ); // Fibonacci recursive function
  double fib_iterative_d( unsigned int n ); // Fibonacci iterative function
+
+ void fib_recursive_optimized_init_d(); // Fibonacci Recursive Optimization - Init Function
+ double fib_recursive_optimized_d( unsigned int n ); // Fibonacci Recursive Optimization function 
 
 #endif

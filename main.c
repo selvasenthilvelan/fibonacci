@@ -11,7 +11,7 @@
 //
 // Author: 		   Selva Senthilvelan
 // Date: 		   02/04/2020
-// Version:		   0.3
+// Version:		   0.4
 //
 // ------------------------------------------------------------------------------
 
@@ -63,6 +63,10 @@ int main( int argc, char **argv )
 
  // Call the iterative fibonacci function and print the result
  printf("Iterative: %d fibonacci number is: %f\n\n", n, fib_iterative_d( n ));
+
+ // Call the optimized recursive fibonacci function and print the result
+ fib_recursive_optimized_init_d(); // Call the init function
+ printf("Recursive optimized: %d fibonacci number is: %f\n\n", n, fib_recursive_optimized_d( n ) );
 
 }	
 
